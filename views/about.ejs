@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="html.css">
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4;">
+
+    <header style="background-color: #333; color: #fff; padding: 10px 0; text-align: center;">
+        <h1 style="margin: 0;">Create Blog Post</h1>
+    </header>
+
+    <main style="padding: 20px;">
+        <form action="/createBlog" method="post"
+        style="background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <div style="margin-bottom: 20px;">
+                <label for="title" style="display: block; font-weight: bold; margin-bottom: 5px;">Title</label>
+                <input type="text" id="title" name="title" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="subtitle" style="display: block; font-weight: bold; margin-bottom: 5px;">Subtitle</label>
+                <input type="text" id="subtitle" name="subtitle" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="description" style="display: block; font-weight: bold; margin-bottom: 5px;">Description</label>
+                <textarea id="description" name="description" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; height: 100px;"></textarea>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <label for="image" style="display: block; font-weight: bold; margin-bottom: 5px;">Image URL</label>
+                <input type="text" id="image" name="image" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <button type="submit" style="background-color: #333; color: #fff; border: none; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; cursor: pointer; border-radius: 4px;">
+                Create Blog
+            </button>
+        </form>
+    </main>
+
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 10px 0; position: fixed; width: 100%; bottom: 0;">
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript code for form submission or other interactivity can be added here
+        console.log('Form loaded successfully!');
+    </script>
+</body>
+
+</html>
